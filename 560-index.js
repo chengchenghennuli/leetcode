@@ -26,18 +26,6 @@ var subarraySum = function(nums, k) {
  * @return {number}
  */
 var subarraySum = function(nums, k) {
-    /*const l = nums.length;
-    const dp = [...nums];
-    let count = dp.filter(n => n ===k).length;
-    for (let i = 1; i < l; i++){
-        for (let j = l - 1; j >= i; j--){
-            dp[j] = dp[j - 1] + nums[j];
-            if(dp[j] == k){
-                count++
-            }
-        }
-    }
-    return count;*/
    let sum = 0;
    let count = 0;
    const map = new Map()
